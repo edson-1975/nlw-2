@@ -1,0 +1,95 @@
+/* configuração padrão em todo a página */
+:root {
+    font-size: 40%; /* modificar as medidas rem */
+}
+
+/* configuração da landing-page */
+#page-landing {
+    background: var(--color-primary); /* cor de fundo da página */
+}
+
+/* configuração do container principal */
+#page-landing #container {
+    color: var(--color-text-in-primary); /* cor do texto principal do container */
+}
+
+/* imagem da logo */
+.logo-container img {
+    height: 10rem; /* tamanho da logo do container */
+}
+
+/* configuração da logo principal */
+.logo-container {
+    text-align: center; /* alinhamento da logo */
+    margin-bottom: 0.2rem; /* margens inferior da logo */
+}
+
+/* configuração do texto principal */
+.logo-container h2 {
+    /* background-color: coral; /* cor para realçar o texto principal da logo */
+    font-weight: 900; /* tamanho da espessura do título */
+    font-size: 3.6rem; /* tamanho da fonte do título */
+    line-height: 4.6rem; /* altura da linha do título */
+    margin-top: 0.8rem; /* tamanhho da margem superior do título */
+}
+
+/* imagem do meio */
+.hero-image {
+    width: 100%; /* tamanho da imagem */
+}
+
+/* configuração dos botões */
+.buttons-container {
+    display: flex; /* concatena os dois containers */
+    justify-content: center; /* alinhamento justificado */
+    margin: 3.2rem; /* margem nos quatro cantos do container */
+}
+
+/* configuração dos botões do container */
+.buttons-container a {
+    /* background-color: brown; /* cor para realçar os containers */
+    width: 30rem; /* tamanho dos containers */
+    height: 10.4rem; /* altura dos containers */
+
+    border-radius: 1rem; /* bordas arredondadas */
+    margin-right: 1.6rem; /* insere uma margem a direita de cada botão */
+
+    font: 700 2.4rem Archivo; /* tamanho e tipo de fonte */
+
+    display: flex; /* concatena os dois containers */
+    align-items: center; /* alinhamento linear */
+    justify-content: center; /* alinhamento justificado */
+
+    text-decoration: none; /* retira a linha debaixo do texto */
+
+    color: var(--color-button-text); /* define a cor do texto dos botões */
+
+    transition: background 0.2s; /* tempo de transição ao passar o mouse em cima dos botões */
+}
+
+/* configuração da imagem dos botões */
+.buttons-container a img {
+    width: 4rem; /* tamanho da imagem dos botões */
+    margin-right: 2.4rem; /* margem entre as imagens e o texto dos botões */
+}
+
+/* configuração do texto do botão Estudar */
+.buttons-container a.study {
+    background: var(--color-primary-lighter); /* definindo a cor do botão Estudar */ 
+}
+
+/* altera o estado do botão Estudar ao passar o mouse por cima */
+.buttons-container a.study:hover {
+    background: var(--color-primary-light); /* deixa a cor do botão mais clara */
+}
+
+/* configuração do texto do botão Dar aulas */
+.buttons-container a.give-classes {
+    background: var(--color-secondary); /* definindo a cor do botão Dar aulas */
+    margin-right: 0; /* retira a margem direita do botão Dar aulas */
+}
+
+/* altera o estado do botão Dar aulas ao passar o mouse por cima */
+.buttons-container a.give-classes:hover {
+    background: var(--color-secondary-dark); /* deixa a cor do botão mais escura */
+}
