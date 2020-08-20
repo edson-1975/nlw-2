@@ -1,0 +1,107 @@
+<!-- /* start 1:17:15 */ -->
+<!DOCTYPE html>
+<html lang="pt_br"> <!-- lang é um atributo -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proffy | Sua plataforma de estudos online</title>
+    
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="styles/partials/page-study.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet">
+</head>
+
+<body id="page-study">
+
+    <div id="container">
+        <header class="page-header">
+            <div class="top-bar-container">
+                <a href="/">
+                <img src="/images/icons/back.svg" alt="Voltar">
+                </a>
+                <img src="/images/logo.svg" alt="Proffy">
+            </div>
+
+            <div class="header-content">
+                <strong>Esses são os proffys disponíveis</strong>
+                <form id="search-teachers">
+                    <div class="select-block">
+                        <label for="subject">Matéria</label> <!--  -->
+                        <select name="subject" id="subject">
+                            <option value="">Selecione uma opção</option>
+                            <option value="1">Artes</option>
+                            <option value="2">Biologia</option>
+                            <option value="3">Ciências</option>
+                            <option value="4">Educação Física</option>
+                            <option value="5">Física</option>
+                            <option value="6">Geografia</option>
+                            <option value="7">História</option>
+                            <option value="8">Judaísmo</option>
+                            <option value="9">Português</option>
+                            <option value="10">Química</option>
+                        </select>
+                    </div>
+                    <div class="select-block">
+                        <label for="weekday">Dias da semana</label> <!--  -->
+                        <select name="weekday" id="weekday">
+                            <option value="">Selecione uma opção</option>
+                            <option value="1">Domingo</option>
+                            <option value="2">Segunda</option>
+                            <option value="3">Terça</option>
+                            <option value="4">Quarta</option>
+                            <option value="5">Quinta</option>
+                            <option value="6">Sexta</option>
+                            <option value="7">Sábado</option>
+                        </select>
+                    </div>
+                    <div class="input-block">
+                        <label for="time">Hora</label>
+                        <!-- <input name="time" id="time" type="number" min="0" max="24"> -->
+                        <input name="time" id="time" type="time">
+                    </div>
+                    <button type="submit">Filtrar</button>
+                </form>
+            </div>
+        </header>
+
+        <main>
+            <article class="teacher-item">
+                <header>
+                    <img src="/images/avatar.png" alt="avatar">
+                    <div>
+                        <strong>Netanel Azriel</strong>
+                        <span>Judaísmo</span>
+                    </div>
+                </header>
+
+                <p>Entusiasta a respeito de tudo que se refere ao Judaísmo.<br>
+                <br>Apaixonado pela literatura judaica e principalmente pela parte mística do judaísmo. Conteúdo prático e dinâmico diariamente.</p>
+
+                <footer>
+                    <p>Preço/hora<strong>R$ 30,00</strong></p>
+                    <button type="button"><img src="/images/icons/whatsapp.svg" alt="Whatsapp">Entrar em contato</button>
+                </footer>
+            </article>
+
+            <article class="teacher-item">
+                <header>
+                    <img src="/images/avatar2.png" alt="avatar">
+                    <div>
+                        <strong>Malka Azriel</strong>
+                        <span>Alimentação</span>
+                    </div>
+                </header>
+
+                <p>Entusiasta a respeito de tudo que se refere ao Judaísmo.<br>
+                <br>Apaixonado pela literatura judaica e principalmente pela parte mística do judaísmo. Conteúdo prático e dinâmico diariamente.</p>
+
+                <footer>
+                    <p>Preço/hora<strong>R$ 50,00</strong></p>
+                    <button type="button"><img src="/images/icons/whatsapp.svg" alt="Whatsapp">Entrar em contato</button>
+                </footer>
+            </article>
+        </main>
+   </div>
+</body>
+</html>

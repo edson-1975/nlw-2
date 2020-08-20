@@ -1,8 +1,3 @@
-/* configuração padrão em todo a página */
-:root {
-    font-size: 40%; /* modificar as medidas rem */
-}
-
 /* configuração da landing-page */
 #page-landing {
     background: var(--color-primary); /* cor de fundo da página */
@@ -92,4 +87,76 @@
 /* altera o estado do botão Dar aulas ao passar o mouse por cima */
 .buttons-container a.give-classes:hover {
     background: var(--color-secondary-dark); /* deixa a cor do botão mais escura */
+}
+
+/* Configuração do container inferior */
+.total-connections {
+    font-size: 1.8rem; /* define o tamanho da fonte */
+    display: flex; /* concatena os dados do container*/
+    align-items: center; /* alinhamento linear */
+    justify-content: center; /* alinhamento central */
+}
+
+/* configuração da imagem do container inferior */
+.total-connections img {
+    margin-left: 0.8rem;
+}
+
+@media (max-width: 699px) {
+    :root {
+        font-size: 40%; /* modificar as medidas rem */
+    }    
+}
+
+/* alterando o tamanho das telas */
+@media (min-width: 1100px) { /* definindo largura mínima do desktop */
+    #page-landing #container {
+        max-width: 1100px; /* definindo a largura máxima */
+        /* 00:55:00 */
+        display: grid; /* inserindo um grid dentro do container */
+        grid-template-columns: 2fr 1fr 2fr; /* definindo o tamanho das colunas de forma fracionária do grid */
+        grid-template-rows: 350px 1fr; /* definindo o tamanho das linhas do grid */
+        
+        /* definindo as áreas dos templates do grid */
+        grid-template-areas: 
+        "proffy image image"
+        "button button texting";
+        /* distancia entre os grids */
+        column-gap: 87px; 
+        row-gap: 86px;
+    }
+    
+    /* configurando o grid proffy */
+    .logo-container {
+        grid-area: proffy;
+        text-align: initial; /* alinhando o logo no início do container */
+        align-self: center; /* alinha a logo ao centro do primeiro grid */
+        margin: 0;
+    }
+
+    /* configurando as imagens do grid */
+    .logo-container img {
+        height: 127px; /* altura do logo */
+    }
+
+    /* configurando a imagem central do grid*/
+    .hero-image {
+        grid-area: image;
+        height: 350px;
+    }
+
+    /* configurando os botões do grid */
+    .buttons-container {
+        grid-area: button;
+        justify-content: flex-start; /* ajustando os botões no início do grid */
+        margin: 0;
+    }
+
+    /* configurando o texto do grid */
+    .total-connections {
+        grid-area: texting;
+        justify-self: end; /* ajustando os botões no final do grid */
+        font-size: 1.2rem;
+    }
+    /* continuação... 1:17:00 */
 }
